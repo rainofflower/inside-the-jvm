@@ -1,0 +1,20 @@
+参数：
+-XX:+UseSerialGC -verbose:gc -Xms20m -Xmx20m -Xmn10m -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=1 -XX:+PrintTenuringDistribution
+
+结果：
+[GC (Allocation Failure) [DefNew
+Desired survivor size 524288 bytes, new threshold 1 (max 1)
+- age   1:     943168 bytes,     943168 total
+: 6544K->921K(9216K), 0.0032973 secs] 6544K->5017K(19456K), 0.0033358 secs] [Times: user=0.00 sys=0.00, real=0.00 secs]
+[GC (Allocation Failure) [DefNew
+Desired survivor size 524288 bytes, new threshold 1 (max 1)
+: 5017K->0K(9216K), 0.0010192 secs] 9113K->5013K(19456K), 0.0010353 secs] [Times: user=0.00 sys=0.00, real=0.00 secs]
+Heap
+ def new generation   total 9216K, used 4178K [0x00000000fec00000, 0x00000000ff600000, 0x00000000ff600000)
+  eden space 8192K,  51% used [0x00000000fec00000, 0x00000000ff014930, 0x00000000ff400000)
+  from space 1024K,   0% used [0x00000000ff400000, 0x00000000ff400000, 0x00000000ff500000)
+  to   space 1024K,   0% used [0x00000000ff500000, 0x00000000ff500000, 0x00000000ff600000)
+ tenured generation   total 10240K, used 5013K [0x00000000ff600000, 0x0000000100000000, 0x0000000100000000)
+   the space 10240K,  48% used [0x00000000ff600000, 0x00000000ffae5408, 0x00000000ffae5600, 0x0000000100000000)
+ Metaspace       used 3471K, capacity 4496K, committed 4864K, reserved 1056768K
+  class space    used 381K, capacity 388K, committed 512K, reserved 1048576K
