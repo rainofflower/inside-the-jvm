@@ -1,0 +1,14 @@
+参数：
+-XX:+UseSerialGC -verbose:gc -Xms20m -Xmx20m -Xmn10m -XX:+PrintGCDetails -XX:SurvivorRatio=8
+
+结果：
+[GC (Allocation Failure) [DefNew: 6288K->664K(9216K), 0.0040994 secs] 6288K->4761K(19456K), 0.0041536 secs] [Times: user=0.01 sys=0.00, real=0.01 secs]
+Heap
+ def new generation   total 9216K, used 7046K [0x00000000fec00000, 0x00000000ff600000, 0x00000000ff600000)
+  eden space 8192K,  77% used [0x00000000fec00000, 0x00000000ff23b640, 0x00000000ff400000)
+  from space 1024K,  64% used [0x00000000ff500000, 0x00000000ff5a63f8, 0x00000000ff600000)
+  to   space 1024K,   0% used [0x00000000ff400000, 0x00000000ff400000, 0x00000000ff500000)
+ tenured generation   total 10240K, used 4096K [0x00000000ff600000, 0x0000000100000000, 0x0000000100000000)
+   the space 10240K,  40% used [0x00000000ff600000, 0x00000000ffa00020, 0x00000000ffa00200, 0x0000000100000000)
+ Metaspace       used 3471K, capacity 4496K, committed 4864K, reserved 1056768K
+  class space    used 381K, capacity 388K, committed 512K, reserved 1048576K
