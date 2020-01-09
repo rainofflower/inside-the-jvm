@@ -6,7 +6,8 @@
 	<modules>
 		<module>classloader-mechanism</module>
 		<module>allocation-gc</module>
-	</modules>
+        <module>performance-tuning</module>
+    </modules>
 
 
 	<groupId>com.yanghui.learn</groupId>
