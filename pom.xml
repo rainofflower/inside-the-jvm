@@ -7,6 +7,7 @@
 		<module>classloader-mechanism</module>
 		<module>allocation-gc</module>
         <module>performance-tuning</module>
+        <module>class-structure</module>
     </modules>
 
 
