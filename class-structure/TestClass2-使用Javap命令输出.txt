@@ -1,0 +1,143 @@
+D:\workspace-2\inside-the-jvm\class-structure\target\classes\com\yanghui\learn\clazz>javap -verbose TestClass2.class
+Classfile /D:/workspace-2/inside-the-jvm/class-structure/target/classes/com/yanghui/learn/clazz/TestClass2.class
+  Last modified 2020-5-20; size 897 bytes
+  MD5 checksum f7ad9a235a728e2f80749bff96606f18
+  Compiled from "TestClass2.java"
+public class com.yanghui.learn.clazz.TestClass2
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #7.#32         // java/lang/Object."<init>":()V
+   #2 = String             #33            // --constant--
+   #3 = Fieldref           #5.#34         // com/yanghui/learn/clazz/TestClass2.S:Ljava/lang/String;
+   #4 = Fieldref           #5.#35         // com/yanghui/learn/clazz/TestClass2.m:I
+   #5 = Class              #36            // com/yanghui/learn/clazz/TestClass2
+   #6 = Methodref          #37.#38        // java/lang/String.toUpperCase:()Ljava/lang/String;
+   #7 = Class              #39            // java/lang/Object
+   #8 = Utf8               m
+   #9 = Utf8               I
+  #10 = Utf8               S
+  #11 = Utf8               Ljava/lang/String;
+  #12 = Utf8               ConstantValue
+  #13 = Utf8               <init>
+  #14 = Utf8               ()V
+  #15 = Utf8               Code
+  #16 = Utf8               LineNumberTable
+  #17 = Utf8               LocalVariableTable
+  #18 = Utf8               this
+  #19 = Utf8               Lcom/yanghui/learn/clazz/TestClass2;
+  #20 = Utf8               inc
+  #21 = Utf8               ()I
+  #22 = Utf8               (I)I
+  #23 = Utf8               i
+  #24 = Utf8               dec
+  #25 = Utf8               handler
+  #26 = Utf8               ()Ljava/lang/Object;
+  #27 = Utf8               temp
+  #28 = Utf8               Exceptions
+  #29 = Class              #40            // java/lang/Exception
+  #30 = Utf8               SourceFile
+  #31 = Utf8               TestClass2.java
+  #32 = NameAndType        #13:#14        // "<init>":()V
+  #33 = Utf8               --constant--
+  #34 = NameAndType        #10:#11        // S:Ljava/lang/String;
+  #35 = NameAndType        #8:#9          // m:I
+  #36 = Utf8               com/yanghui/learn/clazz/TestClass2
+  #37 = Class              #41            // java/lang/String
+  #38 = NameAndType        #42:#43        // toUpperCase:()Ljava/lang/String;
+  #39 = Utf8               java/lang/Object
+  #40 = Utf8               java/lang/Exception
+  #41 = Utf8               java/lang/String
+  #42 = Utf8               toUpperCase
+  #43 = Utf8               ()Ljava/lang/String;
+{
+  public com.yanghui.learn.clazz.TestClass2();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: ldc           #2                  // String --constant--
+         7: putfield      #3                  // Field S:Ljava/lang/String;
+        10: return
+      LineNumberTable:
+        line 7: 0
+        line 11: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Lcom/yanghui/learn/clazz/TestClass2;
+
+  public int inc();
+    descriptor: ()I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #4                  // Field m:I
+         4: iconst_1
+         5: iadd
+         6: ireturn
+      LineNumberTable:
+        line 14: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass2;
+
+  public int inc(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #4                  // Field m:I
+         4: iload_1
+         5: iadd
+         6: ireturn
+      LineNumberTable:
+        line 18: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass2;
+            0       7     1     i   I
+
+  public int dec(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #4                  // Field m:I
+         4: iload_1
+         5: isub
+         6: ireturn
+      LineNumberTable:
+        line 22: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass2;
+            0       7     1     i   I
+
+  public java.lang.Object handler() throws java.lang.Exception;
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=1
+         0: ldc           #2                  // String --constant--
+         2: invokevirtual #6                  // Method java/lang/String.toUpperCase:()Ljava/lang/String;
+         5: astore_1
+         6: aload_1
+         7: areturn
+      LineNumberTable:
+        line 26: 0
+        line 27: 6
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0  this   Lcom/yanghui/learn/clazz/TestClass2;
+            6       2     1  temp   Ljava/lang/String;
+    Exceptions:
+      throws java.lang.Exception
+}
+SourceFile: "TestClass2.java"

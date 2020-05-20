@@ -1,0 +1,214 @@
+D:\workspace-2\inside-the-jvm\class-structure\target\classes\com\yanghui\learn\clazz>javap -v FinallyTestClass.class
+Classfile /D:/workspace-2/inside-the-jvm/class-structure/target/classes/com/yanghui/learn/clazz/FinallyTestClass.class
+  Last modified 2020-5-20; size 1166 bytes
+  MD5 checksum 612cdae560735694851c69430424c714
+  Compiled from "FinallyTestClass.java"
+public class com.yanghui.learn.clazz.FinallyTestClass
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #9.#36         // java/lang/Object."<init>":()V
+   #2 = Class              #37            // com/yanghui/learn/clazz/FinallyTestClass
+   #3 = Methodref          #2.#36         // com/yanghui/learn/clazz/FinallyTestClass."<init>":()V
+   #4 = Fieldref           #38.#39        // java/lang/System.out:Ljava/io/PrintStream;
+   #5 = Methodref          #2.#40         // com/yanghui/learn/clazz/FinallyTestClass.test02:()I
+   #6 = Methodref          #41.#42        // java/io/PrintStream.println:(I)V
+   #7 = Methodref          #2.#43         // com/yanghui/learn/clazz/FinallyTestClass.inc:()I
+   #8 = Class              #44            // java/lang/Exception
+   #9 = Class              #45            // java/lang/Object
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = Utf8               Code
+  #13 = Utf8               LineNumberTable
+  #14 = Utf8               LocalVariableTable
+  #15 = Utf8               this
+  #16 = Utf8               Lcom/yanghui/learn/clazz/FinallyTestClass;
+  #17 = Utf8               main
+  #18 = Utf8               ([Ljava/lang/String;)V
+  #19 = Utf8               args
+  #20 = Utf8               [Ljava/lang/String;
+  #21 = Utf8               testClass
+  #22 = Utf8               test02
+  #23 = Utf8               ()I
+  #24 = Utf8               e
+  #25 = Utf8               Ljava/lang/Exception;
+  #26 = Utf8               b
+  #27 = Utf8               I
+  #28 = Utf8               StackMapTable
+  #29 = Class              #37            // com/yanghui/learn/clazz/FinallyTestClass
+  #30 = Class              #44            // java/lang/Exception
+  #31 = Class              #46            // java/lang/Throwable
+  #32 = Utf8               inc
+  #33 = Utf8               x
+  #34 = Utf8               SourceFile
+  #35 = Utf8               FinallyTestClass.java
+  #36 = NameAndType        #10:#11        // "<init>":()V
+  #37 = Utf8               com/yanghui/learn/clazz/FinallyTestClass
+  #38 = Class              #47            // java/lang/System
+  #39 = NameAndType        #48:#49        // out:Ljava/io/PrintStream;
+  #40 = NameAndType        #22:#23        // test02:()I
+  #41 = Class              #50            // java/io/PrintStream
+  #42 = NameAndType        #51:#52        // println:(I)V
+  #43 = NameAndType        #32:#23        // inc:()I
+  #44 = Utf8               java/lang/Exception
+  #45 = Utf8               java/lang/Object
+  #46 = Utf8               java/lang/Throwable
+  #47 = Utf8               java/lang/System
+  #48 = Utf8               out
+  #49 = Utf8               Ljava/io/PrintStream;
+  #50 = Utf8               java/io/PrintStream
+  #51 = Utf8               println
+  #52 = Utf8               (I)V
+{
+  public com.yanghui.learn.clazz.FinallyTestClass();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 8: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/yanghui/learn/clazz/FinallyTestClass;
+
+  public static void main(java.lang.String...);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_VARARGS
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #2                  // class com/yanghui/learn/clazz/FinallyTestClass
+         3: dup
+         4: invokespecial #3                  // Method "<init>":()V
+         7: astore_1
+         8: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        11: aload_1
+        12: invokevirtual #5                  // Method test02:()I
+        15: invokevirtual #6                  // Method java/io/PrintStream.println:(I)V
+        18: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        21: aload_1
+        22: invokevirtual #7                  // Method inc:()I
+        25: invokevirtual #6                  // Method java/io/PrintStream.println:(I)V
+        28: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 8
+        line 13: 18
+        line 14: 28
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      29     0  args   [Ljava/lang/String;
+            8      21     1 testClass   Lcom/yanghui/learn/clazz/FinallyTestClass;
+
+  public int test02();
+    descriptor: ()I
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=5, args_size=1
+         0: bipush        20
+         2: istore_1
+         3: iinc          1, 80
+         6: iload_1
+         7: istore_2
+         8: iinc          1, 1
+        11: iload_1
+        12: ireturn
+        13: astore_2
+        14: iinc          1, -1
+        17: iload_1
+        18: istore_3
+        19: iinc          1, 1
+        22: iload_1
+        23: ireturn
+        24: astore        4
+        26: iinc          1, 1
+        29: iload_1
+        30: ireturn
+      Exception table:
+         from    to  target type
+             3     8    13   Class java/lang/Exception
+             3     8    24   any
+            13    19    24   any
+            24    26    24   any
+      LineNumberTable:
+        line 17: 0
+        line 21: 3
+        line 27: 8
+        line 22: 13
+        line 24: 14
+        line 27: 19
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           14      10     2     e   Ljava/lang/Exception;
+            0      31     0  this   Lcom/yanghui/learn/clazz/FinallyTestClass;
+            3      28     1     b   I
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 13
+          locals = [ class com/yanghui/learn/clazz/FinallyTestClass, int ]
+          stack = [ class java/lang/Exception ]
+        frame_type = 74 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+
+  public int inc();
+    descriptor: ()I
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=5, args_size=1
+         0: iconst_1
+         1: istore_1
+         2: iload_1
+         3: istore_2
+         4: iconst_3
+         5: istore_1
+         6: iload_2
+         7: ireturn
+         8: astore_2
+         9: iconst_2
+        10: istore_1
+        11: iload_1
+        12: istore_3
+        13: iconst_3
+        14: istore_1
+        15: iload_3
+        16: ireturn
+        17: astore        4
+        19: iconst_3
+        20: istore_1
+        21: aload         4
+        23: athrow
+      Exception table:
+         from    to  target type
+             0     4     8   Class java/lang/Exception
+             0     4    17   any
+             8    13    17   any
+            17    19    17   any
+      LineNumberTable:
+        line 34: 0
+        line 35: 2
+        line 40: 4
+        line 35: 6
+        line 36: 8
+        line 37: 9
+        line 38: 11
+        line 40: 13
+        line 38: 15
+        line 40: 17
+        line 41: 21
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            2       6     1     x   I
+            9       8     2     e   Ljava/lang/Exception;
+           11       6     1     x   I
+            0      24     0  this   Lcom/yanghui/learn/clazz/FinallyTestClass;
+           21       3     1     x   I
+      StackMapTable: number_of_entries = 2
+        frame_type = 72 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Exception ]
+        frame_type = 72 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+}
+SourceFile: "FinallyTestClass.java"

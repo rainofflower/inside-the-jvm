@@ -1,5 +1,4 @@
 D:\workspace-2\inside-the-jvm\class-structure\target\classes\com\yanghui\learn\clazz>javap -verbose TestClass
-警告: 二进制文件TestClass包含com.yanghui.learn.clazz.TestClass
 Classfile /D:/workspace-2/inside-the-jvm/class-structure/target/classes/com/yanghui/learn/clazz/TestClass.class
   Last modified 2020-5-19; size 401 bytes
   MD5 checksum 74924b8178de84a4160d7a97dcdf7cbd

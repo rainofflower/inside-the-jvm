@@ -10,5 +10,7 @@ public class Main {
     public static void main(String... a){
         TestClass testClass = new TestClass();
         System.out.println(testClass.inc());
+        TestClass2 testClass2 = new TestClass2();
+        System.out.println(testClass2.inc());
     }
 }
