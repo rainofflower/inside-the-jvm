@@ -1,0 +1,358 @@
+D:\workspace-2\inside-the-jvm\class-structure\target\classes\com\yanghui\learn\clazz>javap -v TestClass3.class
+Classfile /D:/workspace-2/inside-the-jvm/class-structure/target/classes/com/yanghui/learn/clazz/TestClass3.class
+  Last modified 2020-5-21; size 2443 bytes
+  MD5 checksum bab6578499a409c499179dbd77ec2c6d
+  Compiled from "TestClass3.java"
+public class com.yanghui.learn.clazz.TestClass3<T extends java.lang.Object> extends java.lang.Object implements java.io.Serializable
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Methodref          #22.#78       // java/lang/Object."<init>":()V
+    #2 = Fieldref           #14.#79       // com/yanghui/learn/clazz/TestClass3.n:I
+    #3 = String             #80           // --constant--
+    #4 = Fieldref           #14.#81       // com/yanghui/learn/clazz/TestClass3.S:Ljava/lang/String;
+    #5 = Class              #82           // java/util/ArrayList
+    #6 = Methodref          #5.#78        // java/util/ArrayList."<init>":()V
+    #7 = InterfaceMethodref #83.#84       // java/util/List.add:(Ljava/lang/Object;)Z
+    #8 = Methodref          #22.#85       // java/lang/Object.getClass:()Ljava/lang/Class;
+    #9 = Class              #86           // java/lang/Integer
+   #10 = Fieldref           #9.#87        // java/lang/Integer.TYPE:Ljava/lang/Class;
+   #11 = Methodref          #9.#88        // java/lang/Integer.intValue:()I
+   #12 = Methodref          #9.#89        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #13 = Fieldref           #14.#90       // com/yanghui/learn/clazz/TestClass3.m:I
+   #14 = Class              #91           // com/yanghui/learn/clazz/TestClass3
+   #15 = Methodref          #92.#93       // java/lang/String.toUpperCase:()Ljava/lang/String;
+   #16 = String             #94           // B
+   #17 = Fieldref           #14.#95       // com/yanghui/learn/clazz/TestClass3.b:Ljava/lang/String;
+   #18 = Methodref          #96.#97       // java/util/Collections.emptyList:()Ljava/util/List;
+   #19 = Fieldref           #14.#98       // com/yanghui/learn/clazz/TestClass3.EMPTY_LIST:Ljava/util/List;
+   #20 = String             #30           // A
+   #21 = Fieldref           #14.#99       // com/yanghui/learn/clazz/TestClass3.c:Ljava/lang/String;
+   #22 = Class              #100          // java/lang/Object
+   #23 = Class              #101          // java/io/Serializable
+   #24 = Utf8               m
+   #25 = Utf8               I
+   #26 = Utf8               n
+   #27 = Utf8               a
+   #28 = Utf8               ConstantValue
+   #29 = Integer            2
+   #30 = Utf8               A
+   #31 = Utf8               Ljava/lang/String;
+   #32 = Utf8               b
+   #33 = Utf8               EMPTY_LIST
+   #34 = Utf8               Ljava/util/List;
+   #35 = Utf8               c
+   #36 = Utf8               d
+   #37 = Utf8               S
+   #38 = Utf8               t
+   #39 = Utf8               Ljava/lang/Object;
+   #40 = Utf8               Signature
+   #41 = Utf8               TT;
+   #42 = Utf8               <init>
+   #43 = Utf8               ()V
+   #44 = Utf8               Code
+   #45 = Utf8               LineNumberTable
+   #46 = Utf8               LocalVariableTable
+   #47 = Utf8               this
+   #48 = Utf8               Lcom/yanghui/learn/clazz/TestClass3;
+   #49 = Utf8               LocalVariableTypeTable
+   #50 = Utf8               Lcom/yanghui/learn/clazz/TestClass3<TT;>;
+   #51 = Utf8               str
+   #52 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+   #53 = Utf8               item
+   #54 = Utf8               param
+   #55 = Utf8               list
+   #56 = Utf8               TV;
+   #57 = Utf8               Ljava/util/List<TT;>;
+   #58 = Utf8               <V:Ljava/lang/Object;>(TT;TV;)Ljava/util/List<TT;>;
+   #59 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+   #60 = Utf8               v
+   #61 = Utf8               Ljava/lang/Integer;
+   #62 = Utf8               StackMapTable
+   #63 = Utf8               <V:Ljava/lang/Object;>(TV;)TV;
+   #64 = Utf8               inc
+   #65 = Utf8               ()I
+   #66 = Utf8               (I)I
+   #67 = Utf8               i
+   #68 = Utf8               dec
+   #69 = Utf8               handler
+   #70 = Utf8               ()Ljava/lang/Object;
+   #71 = Utf8               temp
+   #72 = Utf8               Exceptions
+   #73 = Class              #102          // java/lang/Exception
+   #74 = Utf8               <clinit>
+   #75 = Utf8               <T:Ljava/lang/Object;>Ljava/lang/Object;Ljava/io/Serializable;
+   #76 = Utf8               SourceFile
+   #77 = Utf8               TestClass3.java
+   #78 = NameAndType        #42:#43       // "<init>":()V
+   #79 = NameAndType        #26:#25       // n:I
+   #80 = Utf8               --constant--
+   #81 = NameAndType        #37:#31       // S:Ljava/lang/String;
+   #82 = Utf8               java/util/ArrayList
+   #83 = Class              #103          // java/util/List
+   #84 = NameAndType        #104:#105     // add:(Ljava/lang/Object;)Z
+   #85 = NameAndType        #106:#107     // getClass:()Ljava/lang/Class;
+   #86 = Utf8               java/lang/Integer
+   #87 = NameAndType        #108:#109     // TYPE:Ljava/lang/Class;
+   #88 = NameAndType        #110:#65      // intValue:()I
+   #89 = NameAndType        #111:#112     // valueOf:(I)Ljava/lang/Integer;
+   #90 = NameAndType        #24:#25       // m:I
+   #91 = Utf8               com/yanghui/learn/clazz/TestClass3
+   #92 = Class              #113          // java/lang/String
+   #93 = NameAndType        #114:#115     // toUpperCase:()Ljava/lang/String;
+   #94 = Utf8               B
+   #95 = NameAndType        #32:#31       // b:Ljava/lang/String;
+   #96 = Class              #116          // java/util/Collections
+   #97 = NameAndType        #117:#118     // emptyList:()Ljava/util/List;
+   #98 = NameAndType        #33:#34       // EMPTY_LIST:Ljava/util/List;
+   #99 = NameAndType        #35:#31       // c:Ljava/lang/String;
+  #100 = Utf8               java/lang/Object
+  #101 = Utf8               java/io/Serializable
+  #102 = Utf8               java/lang/Exception
+  #103 = Utf8               java/util/List
+  #104 = Utf8               add
+  #105 = Utf8               (Ljava/lang/Object;)Z
+  #106 = Utf8               getClass
+  #107 = Utf8               ()Ljava/lang/Class;
+  #108 = Utf8               TYPE
+  #109 = Utf8               Ljava/lang/Class;
+  #110 = Utf8               intValue
+  #111 = Utf8               valueOf
+  #112 = Utf8               (I)Ljava/lang/Integer;
+  #113 = Utf8               java/lang/String
+  #114 = Utf8               toUpperCase
+  #115 = Utf8               ()Ljava/lang/String;
+  #116 = Utf8               java/util/Collections
+  #117 = Utf8               emptyList
+  #118 = Utf8               ()Ljava/util/List;
+{
+  static final int a;
+    descriptor: I
+    flags: ACC_STATIC, ACC_FINAL
+    ConstantValue: int 2
+
+  static final java.lang.String A;
+    descriptor: Ljava/lang/String;
+    flags: ACC_STATIC, ACC_FINAL
+    ConstantValue: String A
+
+  static java.lang.String b;
+    descriptor: Ljava/lang/String;
+    flags: ACC_STATIC
+
+  static final java.util.List EMPTY_LIST;
+    descriptor: Ljava/util/List;
+    flags: ACC_STATIC, ACC_FINAL
+
+  static java.lang.String c;
+    descriptor: Ljava/lang/String;
+    flags: ACC_STATIC
+
+  static final java.lang.String d;
+    descriptor: Ljava/lang/String;
+    flags: ACC_STATIC, ACC_FINAL
+    ConstantValue: String A
+
+  public com.yanghui.learn.clazz.TestClass3();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: bipush        66
+         7: putfield      #2                  // Field n:I
+        10: aload_0
+        11: ldc           #3                  // String --constant--
+        13: putfield      #4                  // Field S:Ljava/lang/String;
+        16: return
+      LineNumberTable:
+        line 12: 0
+        line 16: 4
+        line 30: 10
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0  this   Lcom/yanghui/learn/clazz/TestClass3;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0  this   Lcom/yanghui/learn/clazz/TestClass3<TT;>;
+
+  public <V extends java.lang.Object> java.util.List<T> str(T, V);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=4, args_size=3
+         0: new           #5                  // class java/util/ArrayList
+         3: dup
+         4: invokespecial #6                  // Method java/util/ArrayList."<init>":()V
+         7: astore_3
+         8: aload_3
+         9: aload_1
+        10: invokeinterface #7,  2            // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        15: pop
+        16: aload_3
+        17: areturn
+      LineNumberTable:
+        line 35: 0
+        line 36: 8
+        line 37: 16
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0  this   Lcom/yanghui/learn/clazz/TestClass3;
+            0      18     1  item   Ljava/lang/Object;
+            0      18     2 param   Ljava/lang/Object;
+            8      10     3  list   Ljava/util/List;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0  this   Lcom/yanghui/learn/clazz/TestClass3<TT;>;
+            0      18     1  item   TT;
+            0      18     2 param   TV;
+            8      10     3  list   Ljava/util/List<TT;>;
+    Signature: #58                          // <V:Ljava/lang/Object;>(TT;TV;)Ljava/util/List<TT;>;
+
+  public <V extends java.lang.Object> V str(V);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=2
+         0: aload_1
+         1: invokevirtual #8                  // Method java/lang/Object.getClass:()Ljava/lang/Class;
+         4: ldc           #9                  // class java/lang/Integer
+         6: if_acmpeq     19
+         9: aload_1
+        10: invokevirtual #8                  // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        13: getstatic     #10                 // Field java/lang/Integer.TYPE:Ljava/lang/Class;
+        16: if_acmpne     34
+        19: aload_1
+        20: checkcast     #9                  // class java/lang/Integer
+        23: invokevirtual #11                 // Method java/lang/Integer.intValue:()I
+        26: iconst_1
+        27: iadd
+        28: invokestatic  #12                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        31: astore_2
+        32: aload_2
+        33: areturn
+        34: aload_1
+        35: areturn
+      LineNumberTable:
+        line 41: 0
+        line 42: 19
+        line 43: 32
+        line 45: 34
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           32       2     2     v   Ljava/lang/Integer;
+            0      36     0  this   Lcom/yanghui/learn/clazz/TestClass3;
+            0      36     1 param   Ljava/lang/Object;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0      36     0  this   Lcom/yanghui/learn/clazz/TestClass3<TT;>;
+            0      36     1 param   TV;
+      StackMapTable: number_of_entries = 2
+        frame_type = 19 /* same */
+        frame_type = 14 /* same */
+    Signature: #63                          // <V:Ljava/lang/Object;>(TV;)TV;
+
+  public final int inc();
+    descriptor: ()I
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #13                 // Field m:I
+         4: iconst_1
+         5: iadd
+         6: ireturn
+      LineNumberTable:
+        line 49: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass3;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass3<TT;>;
+
+  public int inc(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #13                 // Field m:I
+         4: iload_1
+         5: iadd
+         6: ireturn
+      LineNumberTable:
+        line 53: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass3;
+            0       7     1     i   I
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass3<TT;>;
+
+  public int dec(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #13                 // Field m:I
+         4: iload_1
+         5: isub
+         6: ireturn
+      LineNumberTable:
+        line 57: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass3;
+            0       7     1     i   I
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass3<TT;>;
+
+  public java.lang.Object handler() throws java.lang.Exception;
+    descriptor: ()Ljava/lang/Object;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=1
+         0: ldc           #3                  // String --constant--
+         2: invokevirtual #15                 // Method java/lang/String.toUpperCase:()Ljava/lang/String;
+         5: astore_1
+         6: aload_1
+         7: areturn
+      LineNumberTable:
+        line 61: 0
+        line 62: 6
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0  this   Lcom/yanghui/learn/clazz/TestClass3;
+            6       2     1  temp   Ljava/lang/String;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0  this   Lcom/yanghui/learn/clazz/TestClass3<TT;>;
+    Exceptions:
+      throws java.lang.Exception
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: ldc           #16                 // String B
+         2: putstatic     #17                 // Field b:Ljava/lang/String;
+         5: invokestatic  #18                 // Method java/util/Collections.emptyList:()Ljava/util/List;
+         8: putstatic     #19                 // Field EMPTY_LIST:Ljava/util/List;
+        11: ldc           #20                 // String A
+        13: putstatic     #21                 // Field c:Ljava/lang/String;
+        16: return
+      LineNumberTable:
+        line 22: 0
+        line 24: 5
+        line 26: 11
+}
+Signature: #75                          // <T:Ljava/lang/Object;>Ljava/lang/Object;Ljava/io/Serializable;
+SourceFile: "TestClass3.java"

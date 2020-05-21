@@ -1,0 +1,139 @@
+D:\workspace-2\inside-the-jvm\class-structure\target\classes\com\yanghui\learn\clazz>javap -v TestClass5.class
+Classfile /D:/workspace-2/inside-the-jvm/class-structure/target/classes/com/yanghui/learn/clazz/TestClass5.class
+  Last modified 2020-5-21; size 964 bytes
+  MD5 checksum 3f0552898b3d5ebaea00a7ceed025944
+  Compiled from "TestClass5.java"
+public class com.yanghui.learn.clazz.TestClass5<T extends java.lang.Object> extends java.lang.Object implements java.io.Serializable
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #5.#35         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #4.#36         // com/yanghui/learn/clazz/TestClass5.n:I
+   #3 = Fieldref           #4.#37         // com/yanghui/learn/clazz/TestClass5.m:I
+   #4 = Class              #38            // com/yanghui/learn/clazz/TestClass5
+   #5 = Class              #39            // java/lang/Object
+   #6 = Class              #40            // java/io/Serializable
+   #7 = Utf8               m
+   #8 = Utf8               I
+   #9 = Utf8               n
+  #10 = Utf8               b
+  #11 = Utf8               Ljava/lang/String;
+  #12 = Utf8               ConstantValue
+  #13 = String             #41            // B
+  #14 = Utf8               t
+  #15 = Utf8               Ljava/lang/Object;
+  #16 = Utf8               Signature
+  #17 = Utf8               TT;
+  #18 = Utf8               <init>
+  #19 = Utf8               ()V
+  #20 = Utf8               Code
+  #21 = Utf8               LineNumberTable
+  #22 = Utf8               LocalVariableTable
+  #23 = Utf8               this
+  #24 = Utf8               Lcom/yanghui/learn/clazz/TestClass5;
+  #25 = Utf8               LocalVariableTypeTable
+  #26 = Utf8               Lcom/yanghui/learn/clazz/TestClass5<TT;>;
+  #27 = Utf8               inc
+  #28 = Utf8               ()I
+  #29 = Utf8               (I)I
+  #30 = Utf8               i
+  #31 = Utf8               dec
+  #32 = Utf8               <T:Ljava/lang/Object;>Ljava/lang/Object;Ljava/io/Serializable;
+  #33 = Utf8               SourceFile
+  #34 = Utf8               TestClass5.java
+  #35 = NameAndType        #18:#19        // "<init>":()V
+  #36 = NameAndType        #9:#8          // n:I
+  #37 = NameAndType        #7:#8          // m:I
+  #38 = Utf8               com/yanghui/learn/clazz/TestClass5
+  #39 = Utf8               java/lang/Object
+  #40 = Utf8               java/io/Serializable
+  #41 = Utf8               B
+{
+  static final java.lang.String b;
+    descriptor: Ljava/lang/String;
+    flags: ACC_STATIC, ACC_FINAL
+    ConstantValue: String B
+
+  public com.yanghui.learn.clazz.TestClass5();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: bipush        66
+         7: putfield      #2                  // Field n:I
+        10: return
+      LineNumberTable:
+        line 9: 0
+        line 13: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Lcom/yanghui/learn/clazz/TestClass5;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Lcom/yanghui/learn/clazz/TestClass5<TT;>;
+
+  public final int inc();
+    descriptor: ()I
+    flags: ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #3                  // Field m:I
+         4: iconst_1
+         5: iadd
+         6: ireturn
+      LineNumberTable:
+        line 20: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass5;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass5<TT;>;
+
+  public int inc(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #3                  // Field m:I
+         4: iload_1
+         5: iadd
+         6: ireturn
+      LineNumberTable:
+        line 24: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass5;
+            0       7     1     i   I
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass5<TT;>;
+
+  public int dec(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #3                  // Field m:I
+         4: iload_1
+         5: isub
+         6: ireturn
+      LineNumberTable:
+        line 28: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass5;
+            0       7     1     i   I
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  this   Lcom/yanghui/learn/clazz/TestClass5<TT;>;
+}
+Signature: #32                          // <T:Ljava/lang/Object;>Ljava/lang/Object;Ljava/io/Serializable;
+SourceFile: "TestClass5.java"
