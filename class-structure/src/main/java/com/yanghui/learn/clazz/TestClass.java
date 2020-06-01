@@ -8,7 +8,12 @@ public class TestClass {
 
     private int m;
 
-    public int inc(){
+    public strictfp int inc(){
         return m + 1;
+    }
+
+    public static int inc(int i){
+        i++;
+        return i;
     }
 }
