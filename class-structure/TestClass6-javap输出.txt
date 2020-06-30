@@ -1,0 +1,259 @@
+F:\java\workspace-1\inside-the-jvm\class-structure\target\classes\com\yanghui\learn\clazz>javap -v TestClass6.class
+Classfile /F:/java/workspace-1/inside-the-jvm/class-structure/target/classes/com/yanghui/learn/clazz/TestClass6.class
+  Last modified 2020-6-30; size 1606 bytes
+  MD5 checksum 58a9d7adf1f6e3f13597356c31565cb7
+  Compiled from "TestClass6.java"
+public class com.yanghui.learn.clazz.TestClass6
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #18.#46        // java/lang/Object."<init>":()V
+   #2 = Class              #47            // java/util/ArrayList
+   #3 = Methodref          #2.#46         // java/util/ArrayList."<init>":()V
+   #4 = String             #48            // aaa
+   #5 = Methodref          #2.#49         // java/util/ArrayList.add:(Ljava/lang/Object;)Z
+   #6 = String             #50            // |
+   #7 = Methodref          #2.#51         // java/util/ArrayList.iterator:()Ljava/util/Iterator;
+   #8 = InterfaceMethodref #52.#53        // java/util/Iterator.hasNext:()Z
+   #9 = InterfaceMethodref #52.#54        // java/util/Iterator.next:()Ljava/lang/Object;
+  #10 = Class              #55            // java/lang/String
+  #11 = Class              #56            // java/lang/StringBuilder
+  #12 = Methodref          #11.#46        // java/lang/StringBuilder."<init>":()V
+  #13 = Methodref          #11.#57        // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #14 = Methodref          #11.#58        // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #15 = Fieldref           #59.#60        // java/lang/System.out:Ljava/io/PrintStream;
+  #16 = Methodref          #61.#62        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #17 = Class              #63            // com/yanghui/learn/clazz/TestClass6
+  #18 = Class              #64            // java/lang/Object
+  #19 = Utf8               <init>
+  #20 = Utf8               ()V
+  #21 = Utf8               Code
+  #22 = Utf8               LineNumberTable
+  #23 = Utf8               LocalVariableTable
+  #24 = Utf8               this
+  #25 = Utf8               Lcom/yanghui/learn/clazz/TestClass6;
+  #26 = Utf8               test1
+  #27 = Utf8               bean
+  #28 = Utf8               Ljava/lang/String;
+  #29 = Utf8               list
+  #30 = Utf8               Ljava/util/ArrayList;
+  #31 = Utf8               str
+  #32 = Utf8               title
+  #33 = Utf8               LocalVariableTypeTable
+  #34 = Utf8               Ljava/util/ArrayList<Ljava/lang/String;>;
+  #35 = Utf8               StackMapTable
+  #36 = Class              #63            // com/yanghui/learn/clazz/TestClass6
+  #37 = Class              #47            // java/util/ArrayList
+  #38 = Class              #55            // java/lang/String
+  #39 = Class              #65            // java/util/Iterator
+  #40 = Utf8               test2
+  #41 = Utf8               builder
+  #42 = Utf8               Ljava/lang/StringBuilder;
+  #43 = Class              #56            // java/lang/StringBuilder
+  #44 = Utf8               SourceFile
+  #45 = Utf8               TestClass6.java
+  #46 = NameAndType        #19:#20        // "<init>":()V
+  #47 = Utf8               java/util/ArrayList
+  #48 = Utf8               aaa
+  #49 = NameAndType        #66:#67        // add:(Ljava/lang/Object;)Z
+  #50 = Utf8               |
+  #51 = NameAndType        #68:#69        // iterator:()Ljava/util/Iterator;
+  #52 = Class              #65            // java/util/Iterator
+  #53 = NameAndType        #70:#71        // hasNext:()Z
+  #54 = NameAndType        #72:#73        // next:()Ljava/lang/Object;
+  #55 = Utf8               java/lang/String
+  #56 = Utf8               java/lang/StringBuilder
+  #57 = NameAndType        #74:#75        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #58 = NameAndType        #76:#77        // toString:()Ljava/lang/String;
+  #59 = Class              #78            // java/lang/System
+  #60 = NameAndType        #79:#80        // out:Ljava/io/PrintStream;
+  #61 = Class              #81            // java/io/PrintStream
+  #62 = NameAndType        #82:#83        // println:(Ljava/lang/String;)V
+  #63 = Utf8               com/yanghui/learn/clazz/TestClass6
+  #64 = Utf8               java/lang/Object
+  #65 = Utf8               java/util/Iterator
+  #66 = Utf8               add
+  #67 = Utf8               (Ljava/lang/Object;)Z
+  #68 = Utf8               iterator
+  #69 = Utf8               ()Ljava/util/Iterator;
+  #70 = Utf8               hasNext
+  #71 = Utf8               ()Z
+  #72 = Utf8               next
+  #73 = Utf8               ()Ljava/lang/Object;
+  #74 = Utf8               append
+  #75 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #76 = Utf8               toString
+  #77 = Utf8               ()Ljava/lang/String;
+  #78 = Utf8               java/lang/System
+  #79 = Utf8               out
+  #80 = Utf8               Ljava/io/PrintStream;
+  #81 = Utf8               java/io/PrintStream
+  #82 = Utf8               println
+  #83 = Utf8               (Ljava/lang/String;)V
+{
+  public com.yanghui.learn.clazz.TestClass6();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 8: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/yanghui/learn/clazz/TestClass6;
+
+  public void test1();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=6, args_size=1
+         0: new           #2                  // class java/util/ArrayList
+         3: dup
+         4: invokespecial #3                  // Method java/util/ArrayList."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: ldc           #4                  // String aaa
+        11: invokevirtual #5                  // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+        14: pop
+        15: ldc           #6                  // String |
+        17: astore_2
+        18: ldc           #6                  // String |
+        20: astore_3
+        21: aload_1
+        22: invokevirtual #7                  // Method java/util/ArrayList.iterator:()Ljava/util/Iterator;
+        25: astore        4
+        27: aload         4
+        29: invokeinterface #8,  1            // InterfaceMethod java/util/Iterator.hasNext:()Z
+        34: ifeq          76
+        37: aload         4
+        39: invokeinterface #9,  1            // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        44: checkcast     #10                 // class java/lang/String
+        47: astore        5
+        49: new           #11                 // class java/lang/StringBuilder
+        52: dup
+        53: invokespecial #12                 // Method java/lang/StringBuilder."<init>":()V
+        56: aload_2
+        57: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        60: aload_3
+        61: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        64: aload         5
+        66: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        69: invokevirtual #14                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        72: astore_2
+        73: goto          27
+        76: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        79: aload_2
+        80: invokevirtual #16                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        83: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 8
+        line 13: 15
+        line 14: 18
+        line 15: 21
+        line 16: 49
+        line 17: 73
+        line 18: 76
+        line 19: 83
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           49      24     5  bean   Ljava/lang/String;
+            0      84     0  this   Lcom/yanghui/learn/clazz/TestClass6;
+            8      76     1  list   Ljava/util/ArrayList;
+           18      66     2   str   Ljava/lang/String;
+           21      63     3 title   Ljava/lang/String;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            8      76     1  list   Ljava/util/ArrayList<Ljava/lang/String;>;
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 27
+          locals = [ class com/yanghui/learn/clazz/TestClass6, class java/util/ArrayList, class java/lang/String, class java/lang/String, class java/util/Iterator
+]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 48
+
+  public void test2();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=7, args_size=1
+         0: new           #2                  // class java/util/ArrayList
+         3: dup
+         4: invokespecial #3                  // Method java/util/ArrayList."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: ldc           #4                  // String aaa
+        11: invokevirtual #5                  // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+        14: pop
+        15: ldc           #6                  // String |
+        17: astore_2
+        18: ldc           #6                  // String |
+        20: astore_3
+        21: new           #11                 // class java/lang/StringBuilder
+        24: dup
+        25: invokespecial #12                 // Method java/lang/StringBuilder."<init>":()V
+        28: astore        4
+        30: aload_1
+        31: invokevirtual #7                  // Method java/util/ArrayList.iterator:()Ljava/util/Iterator;
+        34: astore        5
+        36: aload         5
+        38: invokeinterface #8,  1            // InterfaceMethod java/util/Iterator.hasNext:()Z
+        43: ifeq          77
+        46: aload         5
+        48: invokeinterface #9,  1            // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        53: checkcast     #10                 // class java/lang/String
+        56: astore        6
+        58: aload         4
+        60: aload_2
+        61: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        64: aload_3
+        65: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        68: aload         6
+        70: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        73: pop
+        74: goto          36
+        77: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        80: aload         4
+        82: invokevirtual #14                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        85: invokevirtual #16                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        88: return
+      LineNumberTable:
+        line 22: 0
+        line 23: 8
+        line 24: 15
+        line 25: 18
+        line 26: 21
+        line 27: 30
+        line 28: 58
+        line 29: 65
+        line 30: 70
+        line 31: 74
+        line 32: 77
+        line 33: 88
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           58      16     6  bean   Ljava/lang/String;
+            0      89     0  this   Lcom/yanghui/learn/clazz/TestClass6;
+            8      81     1  list   Ljava/util/ArrayList;
+           18      71     2   str   Ljava/lang/String;
+           21      68     3 title   Ljava/lang/String;
+           30      59     4 builder   Ljava/lang/StringBuilder;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            8      81     1  list   Ljava/util/ArrayList<Ljava/lang/String;>;
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 36
+          locals = [ class com/yanghui/learn/clazz/TestClass6, class java/util/ArrayList, class java/lang/String, class java/lang/String, class java/lang/StringBui
+lder, class java/util/Iterator ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 40
+}
+SourceFile: "TestClass6.java"

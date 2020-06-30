@@ -19,6 +19,9 @@ public class Main {
 
         TestClass5 testClass5 = new TestClass5<Integer>();
         System.out.println(testClass5.inc(5));
+        TestClass6 testClass6 = new TestClass6();
+        testClass6.test1();
+        testClass6.test2();
 
     }
 }

@@ -17,14 +17,14 @@ public class FinallyTestClass {
         int b = 20;
         try {
 //            System.out.println("try block");
-//            int c = b / 0;
+            int c = b / 0;
             return b+=80;
         } catch (Exception e) {
 //            System.out.println("catch block");
             return --b;
         } finally {
 //            System.out.println("finally block");
-            return ++b;
+            ++b;
         }
     }
 
