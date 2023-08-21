@@ -37,6 +37,9 @@ public class MonitoringTest {
          * 在fillHeap方法栈帧出栈之后触发full gc，从GC Roots到fillHeap方法里的局部变量list引用的数组已经不可达了（list对象不在当前作用域内了），所以list会被回收
          */
         System.gc();
+        fillHeap(1000);
+        Thread.sleep(5000);
+        fillHeap(1000);
         Thread.sleep(5000);
         System.out.println("程序退出");
     }

@@ -11,11 +11,20 @@
 
     <artifactId>class-structure</artifactId>
 
+    <properties>
+        <fastjson.verson>2.0.32</fastjson.verson>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.verson}</version>
         </dependency>
     </dependencies>
 

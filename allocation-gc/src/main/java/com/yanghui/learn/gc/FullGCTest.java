@@ -29,5 +29,8 @@ public class FullGCTest {
         allocation7 = null;
         allocation7 = new byte[_1M * 2];
         allocation8 = new byte[_1M * 2];
+
+//        allocation8 = new byte[_1M * 15];
+//        allocation7 = new byte[_1M * 15];
     }
 }

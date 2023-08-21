@@ -18,9 +18,9 @@ public class AllocationTest {
      */
     public static void testAllocation1(){
         byte[] allocation1, allocation2, allocation3, allocation4;
-        allocation1 = new byte[2 * _1M];
+        allocation1 = new byte[12 * _1M];
         allocation2 = new byte[2 * _1M];
         allocation3 = new byte[2 * _1M];
-        allocation4 = new byte[4 * _1M]; //出现一次Minor GC
+        allocation4 = new byte[6 * _1M]; //出现一次Minor GC
     }
 }

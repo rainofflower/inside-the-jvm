@@ -21,10 +21,11 @@ public class FinallyTestClass {
             return b+=80;
         } catch (Exception e) {
 //            System.out.println("catch block");
-            return --b;
+            return ++b;
         } finally {
 //            System.out.println("finally block");
             ++b;
+            return b;
         }
     }
 
