@@ -52,6 +52,8 @@ public class Foo {
     }
 
     public static void main(String... args){
+        String s = "hi";
+        System.out.println(s.toString());
         System.out.println(SubFoo.s);   // 打印结果为3
     }
 
