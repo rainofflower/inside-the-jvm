@@ -1,5 +1,7 @@
 package com.yanghui.learn.classloader;
 
+import sun.misc.Launcher;
+
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -26,8 +28,23 @@ public class ClassLoaderTest {
                 }
             }
         };
-        Object obj = myClassLoader.loadClass("com.yanghui.learn.classloader.ClassLoaderTest").newInstance();
-        System.out.println(obj.getClass());
-        System.out.println(obj instanceof com.yanghui.learn.classloader.ClassLoaderTest);
+//        Object obj = myClassLoader.loadClass("com.yanghui.learn.classloader.ClassLoaderTest").newInstance();
+//        System.out.println(obj.getClass());
+//        System.out.println(obj instanceof com.yanghui.learn.classloader.ClassLoaderTest);
+
+        System.out.println(myClassLoader.getClass().getClassLoader());
+        System.out.println(Object.class.getClassLoader());
+
+        System.out.println(Launcher.getLauncher().getClassLoader());
+        System.out.println(ClassLoader.getSystemClassLoader());
+        System.out.println(Thread.currentThread().getContextClassLoader());
+
+        System.out.println(Launcher.getLauncher().getClassLoader().getParent());
+        System.out.println(Launcher.getLauncher().getClassLoader().getParent().getParent());
+
+        System.out.println(ClassLoader.getSystemClassLoader().loadClass("com.yanghui.learn.classloader.ClassLoaderTest").newInstance() instanceof ClassLoaderTest);
+        //ExtClassLoader加载不到用户类路径（classpath）下的类，直接报ClassNotFoundException
+        //System.out.println(ClassLoader.getSystemClassLoader().getParent().loadClass("com.yanghui.learn.classloader.ClassLoaderTest").newInstance() instanceof ClassLoaderTest);
+
     }
 }
