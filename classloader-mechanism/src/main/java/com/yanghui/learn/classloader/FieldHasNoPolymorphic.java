@@ -61,6 +61,10 @@ public class FieldHasNoPolymorphic {
          * i am son, i have 4
          * this guy has 2
          * this guy has 4
+         * 虚方法,aload_0加载到栈顶的对象的实际类型是Son,先去Son中找与常量池中描述符和简单名称都相符的方法
+         * 描述符()V
+         * 简单名称showMoney
+         * 找到了进行访问权限校验，通过了就返回方法的直接引用
          *
          * 当showMoney是非虚方法时输出
          * i am father, i have 2
