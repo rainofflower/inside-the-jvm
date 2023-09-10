@@ -1,6 +1,9 @@
 package com.yanghui.learn.classloader;
 
 /**
+ * 字段不参与动态
+ * Polymorphic动态的
+ *
  * 静态内部类/字段通过静态类型访问、方法动态分派
  * javap查看内部类命令
  * javap -v FieldHasNoPolymorphic\$Son.class
