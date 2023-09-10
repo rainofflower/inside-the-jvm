@@ -1,8 +1,9 @@
 package com.yanghui.learn.classloader;
 
 /**
+ * 静态内部类/字段通过静态类型访问、方法动态分派
  * javap查看内部类命令
- * javap -v FieldHasNoPolymorphic\$Son
+ * javap -v FieldHasNoPolymorphic\$Son.class
  * 在UNIX中，需要对$转义，其他系统中不需要加\
  */
 public class FieldHasNoPolymorphic {
