@@ -8,7 +8,8 @@
 		<module>allocation-gc</module>
         <module>performance-tuning</module>
         <module>class-structure</module>
-    </modules>
+		<module>tomcat-classloader</module>
+	</modules>
 
 
 	<groupId>com.yanghui.learn</groupId>
