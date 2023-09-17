@@ -1,6 +1,6 @@
-D:\workspace-2\inside-the-jvm\class-structure\target\classes\com\yanghui\learn\clazz>javap -v TestClass3.class
-Classfile /D:/workspace-2/inside-the-jvm/class-structure/target/classes/com/yanghui/learn/clazz/TestClass3.class
-  Last modified 2020-5-21; size 2443 bytes
+javap -p -v TestClass3.class
+Classfile /Users/yanghui/project/inside-the-jvm/class-structure/target/classes/com/yanghui/learn/clazz/TestClass3.class
+  Last modified 2023-8-29; size 2443 bytes
   MD5 checksum bab6578499a409c499179dbd77ec2c6d
   Compiled from "TestClass3.java"
 public class com.yanghui.learn.clazz.TestClass3<T extends java.lang.Object> extends java.lang.Object implements java.io.Serializable
@@ -127,6 +127,14 @@ Constant pool:
   #117 = Utf8               emptyList
   #118 = Utf8               ()Ljava/util/List;
 {
+  private int m;
+    descriptor: I
+    flags: ACC_PRIVATE
+
+  private int n;
+    descriptor: I
+    flags: ACC_PRIVATE
+
   static final int a;
     descriptor: I
     flags: ACC_STATIC, ACC_FINAL
@@ -153,6 +161,16 @@ Constant pool:
     descriptor: Ljava/lang/String;
     flags: ACC_STATIC, ACC_FINAL
     ConstantValue: String A
+
+  private final java.lang.String S;
+    descriptor: Ljava/lang/String;
+    flags: ACC_PRIVATE, ACC_FINAL
+    ConstantValue: String --constant--
+
+  private volatile transient T t;
+    descriptor: Ljava/lang/Object;
+    flags: ACC_PRIVATE, ACC_VOLATILE, ACC_TRANSIENT
+    Signature: #41                          // TT;
 
   public com.yanghui.learn.clazz.TestClass3();
     descriptor: ()V
