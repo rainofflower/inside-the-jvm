@@ -1,16 +1,12 @@
 package com.yanghui.learn.classloader;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
- * java泛型相关
+ * java泛型相关、迭代器、装箱、拆箱
  * 类型擦除式泛型
  * erasure / ɪˈreɪʒər / 擦除、消除
- * @param <E>
  */
 public class TypeErasureGenerics<E> {
 
@@ -96,6 +92,27 @@ public class TypeErasureGenerics<E> {
         integerList.add(3);
         Integer[] array = convert(integerList, Integer.class);
         System.out.println(array.length);
+
+        //泛型、变长参数、自动装箱
+        List<Integer> list = Arrays.asList(1, 2, 3, 4);
+        int sum = 0;
+        /**
+         * 遍历循环最终被还原为迭代器实现（被遍历的类必须实现Iterable接口的原因）
+         * int i;
+         * for(Iterator var6 = list.iterator(); var6.hasNext(); sum += i) {
+         *     i = (Integer)var6.next();
+         * }
+         * 上面var6.next()实际还存在自动拆箱
+         * 见下方字节码133
+         * 123 aload 6
+         * 125 invokeinterface #35 <java/util/Iterator.next : ()Ljava/lang/Object;> count 1
+         * 130 checkcast #28 <java/lang/Integer>
+         * 133 invokevirtual #36 <java/lang/Integer.intValue : ()I>
+         */
+        for(int i : list){
+            sum += i;
+        }
+        System.out.println(sum);
     }
 
 }
