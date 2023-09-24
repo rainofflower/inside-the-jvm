@@ -10,6 +10,8 @@ import java.util.HashMap;
 public class Application {
 
     public static void main(String[] args) throws Exception{
+        String classPath = System.getProperty("java.class.path");
+        System.out.println(classPath);
 //        Server server = new Server();
 //        server.start();
         CommonClassLoader commonClassLoader = new CommonClassLoader();

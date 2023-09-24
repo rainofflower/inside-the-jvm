@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 /**
- * java泛型相关、迭代器、装箱、拆箱
+ * java泛型相关、迭代器、装箱、拆箱、循环体控制流字节码指令、回边指令
  * 类型擦除式泛型
  * erasure / ɪˈreɪʒər / 擦除、消除
  */
@@ -104,10 +104,20 @@ public class TypeErasureGenerics<E> {
          * }
          * 上面var6.next()实际还存在自动拆箱
          * 见下方字节码133
+         * 113 aload 6
+         * 115 invokeinterface #34 <java/util/Iterator.hasNext : ()Z> count 1
+         * 120 ifeq 148 (+28)       //当栈顶int型值等于0时跳转 （跳转到字节码序号148）
          * 123 aload 6
          * 125 invokeinterface #35 <java/util/Iterator.next : ()Ljava/lang/Object;> count 1
          * 130 checkcast #28 <java/lang/Integer>
          * 133 invokevirtual #36 <java/lang/Integer.intValue : ()I>
+         * 136 istore 7
+         * 138 iload 5
+         * 140 iload 7
+         * 142 iadd
+         * 143 istore 5
+         * 145 goto 113 (-32)       //向后跳转，回边指令
+         * 148 getstatic #8 <java/lang/System.out : Ljava/io/PrintStream;>
          */
         for(int i : list){
             sum += i;
