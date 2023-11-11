@@ -11,7 +11,7 @@ public class CatalinaClassLoader extends ClassLoader {
 
     public CatalinaClassLoader(ClassLoader parent) {
         super(parent);
-        this.classPath = "D:\\workspace-2\\inside-the-jvm\\tomcat-classloader\\catalina";
+        this.classPath = "/Users/yanghui/project/inside-the-jvm/tomcat-classloader/catalina";
     }
 
     @Override

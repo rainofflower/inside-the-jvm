@@ -9,7 +9,7 @@ public class WebAppClassLoader extends ClassLoader {
 
     public WebAppClassLoader(ClassLoader parent) {
         super(parent);
-        this.classPath = "D:\\workspace-2\\inside-the-jvm\\tomcat-classloader\\webapp";
+        this.classPath = "/Users/yanghui/project/inside-the-jvm/tomcat-classloader/webapp";
     }
 
     @Override

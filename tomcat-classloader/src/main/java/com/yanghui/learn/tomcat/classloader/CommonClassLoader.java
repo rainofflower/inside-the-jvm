@@ -10,7 +10,7 @@ public class CommonClassLoader extends ClassLoader {
 
     public CommonClassLoader() {
         super(ClassLoader.getSystemClassLoader());
-        this.classPath = "D:\\workspace-2\\inside-the-jvm\\tomcat-classloader\\common";
+        this.classPath = "/Users/yanghui/project/inside-the-jvm/tomcat-classloader/common";
     }
 
     @Override
