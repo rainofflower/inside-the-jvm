@@ -9,7 +9,8 @@
         <module>performance-tuning</module>
         <module>class-structure</module>
 		<module>tomcat-classloader</module>
-	</modules>
+        <module>memory-model-thread-lock</module>
+    </modules>
 
 
 	<groupId>com.yanghui.learn</groupId>
